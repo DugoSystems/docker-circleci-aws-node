@@ -1,3 +1,4 @@
 FROM circleci/node:8
 
-RUN pip install awscli --upgrade --user
+RUN sudo apt-get -y install python-dev python-pip
+RUN sudo pip install awscli --upgrade
